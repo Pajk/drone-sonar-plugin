@@ -1,5 +1,7 @@
 FROM openjdk:8-jre-alpine
 
+RUN apk add --update nodejs
+
 COPY drone-sonar /bin/
 COPY lib/sonar-scanner-cli-3.2.0.1227.zip /bin
 
